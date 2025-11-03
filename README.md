@@ -9,46 +9,66 @@
       background: #0e1a2b;
       color: #f0f8ff;
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      display: flex;
-      justify-content: center;
       padding: 40px 0;
       min-height: 100vh;
-      overflow-y: auto; /* ✅ allows full page scrolling if needed */
-      align-items: flex-start; /* so the game starts at top */
+      overflow-y: auto; /* Permite el scroll vertical en toda la página */
+      /* No uses display:flex aquí, así el contenido puede crecer y hacer scroll normal */
     }
     #game {
-      width: 90%; max-width: 700px;
+      width: 90%; 
+      max-width: 700px;
+      margin: 0 auto; /* Centra horizontalmente */
       background: rgba(20, 35, 60, 0.95);
-      border-radius: 16px; padding: 30px;
+      border-radius: 16px; 
+      padding: 30px;
       box-shadow: 0 0 20px rgba(0,0,0,0.7);
       position: relative;
-      /* was: overflow: hidden; -- REMOVE IT! */
-      overflow: visible !important; /* ✅ NO cropping of inner content, important to override any inheritance */
+      overflow: visible; /* Asegura que nada se corte dentro del contenedor */
     }
-    h2 { text-align: center; margin-bottom: 20px; font-size: 1.8rem; color: #ffdd66; }
+    h2 { 
+      text-align: center; 
+      margin-bottom: 20px; 
+      font-size: 1.8rem; 
+      color: #ffdd66; 
+    }
     #scene {
       margin-bottom: 20px;
       line-height: 1.5;
       animation: fadeIn 0.8s ease-in;
       word-break: break-word;
       overflow-wrap: break-word;
-      min-height: 0; /* just in case */
     }
     #choices button {
-      display: block; width: 100%; margin: 8px 0; padding: 12px;
-      border: none; border-radius: 8px; background: #336699; color: #fff;
-      font-size: 1rem; cursor: pointer; transition: background 0.3s, transform 0.1s;
+      display: block; 
+      width: 100%; 
+      margin: 8px 0; 
+      padding: 12px;
+      border: none; 
+      border-radius: 8px; 
+      background: #336699; 
+      color: #fff;
+      font-size: 1rem; 
+      cursor: pointer; 
+      transition: background 0.3s, transform 0.1s;
     }
     #choices button:hover { background: #5a9bd3; }
     #choices button:active { transform: scale(0.98); }
     input[type="text"] {
-      width: calc(100% - 22px); padding: 10px; margin-bottom: 12px;
-      border-radius: 6px; border: none; font-size: 1rem;
+      width: calc(100% - 22px); 
+      padding: 10px; 
+      margin-bottom: 12px;
+      border-radius: 6px; 
+      border: none; 
+      font-size: 1rem;
     }
     #inventory {
-      position: absolute; bottom: 16px; right: 16px;
-      background: rgba(0,0,0,0.5); padding: 8px 12px;
-      border-radius: 8px; font-size: 0.9rem;
+      position: absolute; 
+      bottom: 16px; 
+      right: 16px;
+      background: rgba(0,0,0,0.5); 
+      padding: 8px 12px;
+      border-radius: 8px; 
+      font-size: 0.9rem;
     }
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
