@@ -5,12 +5,17 @@
   <title>El Misterio del Mero Dorado</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background: #0e1a2b; color: #f0f8ff;
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      display: flex; justify-content: center; align-items: center;
-      height: 100vh; overflow: hidden;
-    }
+   body {
+  background: #0e1a2b;
+  color: #f0f8ff;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  min-height: 100vh;
+  overflow-y: auto; /* ✅ permite scroll general */
+  align-items: flex-start; /* ✅ evita que el juego se corte si crece */
+}
     #game {
       width: 90%; max-width: 700px;
       background: rgba(20, 35, 60, 0.95);
