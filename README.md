@@ -95,10 +95,10 @@ Es momento de honrar la historia del legendario Mero Dorado en un día tan seña
       inventory: [],
       scenes: [
         {
-          text: "Capítulo 1: Estás frente al edificio Calle Enric Granados 90‑92. Tres elementos destacan:",
+          text: "Capítulo 1: Estás frente a la puerta 90-92 de la Calle Enric Granados, en la maravillosa ciudad de Barcelona. Tres elementos destacan:",
           choices: [
             { text: "Examinar el buzón", next: 1 },
-            { text: "Leer el grafiti", next: 2 },
+            { text: "Leer un graffiti", next: 2 },
             { text: "Llamar al timbre", next: 3 }
           ]
         },
@@ -131,39 +131,39 @@ Es momento de honrar la historia del legendario Mero Dorado en un día tan seña
           ]
         },
         {
-          text: "No es correcto. El buzón emite un extraño sonido acuático. Inténtalo de nuevo.",
+          text: "No es correcto. El buzón emite un extraño sonido Loli-acuático. Inténtalo de nuevo.",
           choices: [
             { text: "Reintentar", next: 1 }
           ]
         },
         {
-        text: "Has añadido la <strong>llave dorada</strong> al inventario. La pista al Peixateria Frederic te guía al siguiente paso.",
+        text: "Has añadido la <strong>llave dorada</strong> al inventario. La pista sobre la Peixateria Frederic te guía al siguiente paso.",
         choices: [
           { text: "Ir a Peixateria Frederic", next: 7 }
         ]
         },
         {
-          text: "Capítulo 2: En la Peixateria Frederic, Frederic, el dueño, te lanza un acertijo: ‘¿Cuál de estos peces no puede nadar?’\n\n1) Pez espada\n2) Pez globo\n3) Pez de madera",
+          text: "Capítulo 2: En la Peixateria Frederic, Frederic, el marido de la dueña Mercè, te lanza un acertijo: ‘¿Cuál de estos peces no puede nadar?’\n\n1) Loli-sword pescadito\n2) Loli-globi pescadito\n3) Loli-wooden pescadito",
           choices: [
-            { text: "Pez de madera", next: 8 },
-            { text: "Pez globo", next: 9 },
-            { text: "Pez espada", next: 9 }
+            { text: "Loli-wooden pescadito", next: 8 },
+            { text: "Loli-globi pescadito", next: 9 },
+            { text: "Loli-sword pescadito", next: 9 }
           ]
         },
         {
-          text: "¡Correcto! Frederic te entrega una foto de la cámara de seguridad: se ve una silueta con un paraguas rojo.",
+          text: "¡Correcto! Cómo se nota que le metiste un mes bien duro al CosmoCaixa, casi nadie acierta esta pregunta! Frederic te entrega una foto de la cámara de seguridad: se ve una silueta con un paraguas rojo.",
           choices: [
             { text: "Seguir la silueta", next: 10 }
           ]
         },
         {
-          text: "Incorrecto. Frederic dice: “Piensa fuera del agua.” Vuelve a intentarlo.",
+          text: "Incorrecto. Frederic dice: “Piensa fuera del agua (o de la caja, como se diga en tu barrio).” Vuelve a intentarlo.",
           choices: [
             { text: "Reintentar", next: 7 }
           ]
         },
         {
-          text: "Capítulo 3: Sigues la silueta. En su mochila ves un diario con contraseña basada en letras mayúsculas de 'PEIXATERIA'.",
+          text: "Capítulo 3: Sigues la silueta. En su mochila ves un diario con contraseña escrita en letras mayúsculas. Parece que el término a introducir está relacionado con el lugar de trabajo de Frederic",
           input: true,
           correct: "PEIXATERIA",
           success: 11,
@@ -176,43 +176,43 @@ Es momento de honrar la historia del legendario Mero Dorado en un día tan seña
           ]
         },
         {
-          text: "Fallido. Observa bien la palabra y las letras en mayúscula.",
+          text: "Fallido. Una pista traviesa: Si la contraseña está relacionada con el lugar de TRABAJO de Frederic, que trabaja en PEIXATERIA FREDERIC, y sabemos que la palabra Frederic NO es la contraseña correcta, qué palabra nos queda?"
           choices: [
             { text: "Reintentar", next: 10 }
           ]
         },
         {
-          text: "Capítulo 4: Estás frente al acceso secreto. La pista dice:\n“Arroz + Nori + Mero Dorado = contraseña”.",
+          text: "Capítulo 4: Estás frente al acceso secreto. La pista dice:\n“Blub blub blub, por la memoria de Nemo. Ga gaga gagá, por los pelos de Foxy. Clin-clin, clin-clin, clin-clin, por los 7 colores del espectro. Estas esotéricas y bohemias expresiones sirven para conjurar el... (en mayúsculas y sin espacios) ”.",
           input: true,
-          correct: "ARROZNORI",
+          correct: "NIÑOINTERIOR",
           success: 14,
           fail: 15
         },
         {
-          text: "Acceso concedido. Dentro ves al chef con el Mero Dorado.",
+          text: "Acceso concedido. Dentro ves al chef gargantúo con el famoso y legendario Mero Dorado. Justo debajo del Mero, encuentras a las 3 razas casi extintas y nunca vistas de pescados supremos: Lola, Lolita y Lolota. Las 4 razas de pescados juntos pueden regalar un inmenso poder a quien los posea, pero en las manos equivocadas eso puede ser un gran peligro. Ante tal escenario, sabes que si no haces nada el chef gargantúo conquistará y destruirá el mundo entero! Solo tienes una opción:",
           choices: [
-            { text: "Confrontar al chef", next: 16 }
+            { text: "Confrontar al chef con Loli-diálogo y, en caso de que se ponga farruko, también a Loli-puñetazo limpio", next: 16 }
           ]
         },
         {
-          text: "No funciona. Intenta otra combinación con las pistas dadas.",
+          text: "No funciona. Acaso alguien ya no se acuerda de un hechizo tan icónico para despertar a tu NIÑO INTERIOR?",
           choices: [
             { text: "Reintentar", next: 13 }
           ]
         },
         {
-          text: "Capítulo 5: Confrontación final. Descubres que el Mero Dorado es una escultura comestible para un concurso. ¿Qué haces?",
+          text: "Capítulo 5: Confrontación final. Tu Loli-diálogo le cautivó el corazón y entró en razón! El chef recapacita y abandona la idea de conquistar el mundo. Aparte de la maquiavélica escena con los peces, ves que en la despensa también hay un poco de apetitosa pumpkin pie. En función de lo que decidas ahora, llegarás a un desenlace u otro, escoge muy sabiamente",
           choices: [
-            { text: "Entregarlo a la policía", next: 17 },
-            { text: "Probarlo tú mismo", next: 18 }
+            { text: "Llamas a la policía y al calabozo directo, ese pibe sabe cosas. Si ya pudo reunir al Mero + 3 Loli-pescados una vez, seguro que puede hacerlo en el futuro de nuevo", next: 17 },
+            { text: "Decides dejarlo escapar y vivir tranquilamente. A cambio, te comes el pastel de calabaza que se había preparado para él mismo de postre", next: 18 }
           ]
         },
         {
-          text: "Decides entregarlo. El barrio celebra que el misterio fue resuelto. De la misma manera que los vecinos celebran el fin del misterio, el creador de este juego celebra poder tenerte aquí, digitalmente, jugando a esta tontería que me ha llevado casi 2h programar. Pero vaya, si quien juega vale la pena, ninguna inversión de tiempo es excesiva. FELIZ 4 DE NOVIEMBRE!!! ¡Fin!",
+          text: "Decides entregarlo. El barrio celebra que el peligro nunca llegó a más. De la misma manera que los vecinos celebran el fin del misterio, el creador de este juego celebra poder tenerte aquí, digitalmente, jugando a esta tontería que me ha llevado más de 2h programar. Pero vaya, si quien juega vale la pena, ninguna inversión de tiempo es excesiva. Qué gran día para celebrar el tenernos y estar vivos sin que sea una fecha señalada como tal. FELIZ 4 DE NOVIEMBRE!!! (6 MESES Y UN DÍA DESDE EL 3 DE MAYO QUÉ FUERTE!!!) ¡Fin!",
           choices: []
         },
         {
-          text: "Decides probarlo. Es delicioso (pero quien juega ahora a este juego más todavía). Te conviertes en leyenda entre amantes del sushi. De la misma manera que los sushi(Lu)-lovers celebran el fin del misterio, el creador de este juego celebra poder tenerte aquí, digitalmente, jugando a esta tontería que me ha llevado casi 2h programar. Pero vaya, si quien juega vale la pena, ninguna inversión de tiempo es excesiva. FELIZ 4 DE NOVIEMBRE!!! ¡Fin!",
+          text: "Decides probarlo. Es delicioso (pero quien juega a este juego lo es más todavía). Te conviertes en leyenda entre amantes de pumpkin pie (Sofi tu mayor fan). De la misma manera que los pumpkin(Lu)-lovers celebran el fin del misterio, el creador de este juego celebra poder tenerte aquí, digitalmente, jugando a esta tontería que me ha llevado más de 2h programar. Pero vaya, si quien juega vale la pena, ninguna inversión de tiempo es excesiva. Qué gran día para celebrar el tenernos y estar vivos sin que sea una fecha señalada como tal. FELIZ 4 DE NOVIEMBRE!!! (6 MESES Y UN DÍA DESDE EL 3 DE MAYO QUÉ FUERTE!!!)  ¡Fin!",
           choices: []
         }
       ]
